@@ -15,6 +15,143 @@
  */
  @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
 
+
+ #smalltext {
+  font-size: 14px;
+}
+
+#mediumtext {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.star_rating {font-size:0; letter-spacing:-4px;}
+.star_rating a {
+  font-size:40px;
+  letter-spacing:0;
+  display:inline-block;
+  margin-left:5px;
+  color:#ccc;
+  text-decoration:none;
+}
+.star_rating a:first-child {margin-left:0;}
+.star_rating a.on {color:orange !important;}
+
+a.links:link {
+  text-decoration: none;
+}
+
+#infoprofile {
+  margin-top: 60px;
+}
+
+#menuButton1 {
+  margin-top: 20px;
+}
+
+#menuButton2 {
+  margin-top: 20px;
+}
+
+#menuButton3 {
+  margin-top: 20px;
+}
+
+.dropdown-menu1 {
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-top: transparent;
+}
+
+.dropdown-menu2 {
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-top: transparent;
+}
+
+.dropdown-menu3 {
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-top: transparent;
+}
+
+#mooneui {
+  margin-top: 20px;
+}
+
+#myBtn {
+  /*display: none;*/ /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: orange; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 14px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+/**
+* Tabs object.
+*
+* 1. Tables (kinda) for layout!
+* 2. This is the magic bit; make all children occupy equal width.
+* 3. Required to make the tabs fill their container.
+* 4. Make each tab pack up horizontally.
+* 5. Ensure the hit area covers the whole tab.
+*/
+.tabs {
+  margin:  0;
+  padding: 0;
+  list-style: none;
+  display: table; /* [1] */
+  table-layout: fixed; /* [2] */
+  width: 100%; /* [3] */
+}
+
+  .tabs__item {
+      display: table-cell; /* [4] */
+  }
+
+      .tabs__link {
+          display: block; /* [5] */
+      }
+
+
+/**
+* Primary nav. Extends `.tabs`.
+*
+* 1. Stop tabs’ corners leaking out beyond our 4px round.
+*/
+.primary-nav {
+  text-align: center;
+  border-radius: 4px;
+  overflow: hidden; /* [1] */
+}
+
+      .primary-nav a {
+          padding: 1em;
+          background-color: #BADA55;
+          color: #fff;
+          font-weight: bold;
+          text-decoration: none;
+      }
+
+      .primary-nav a:hover {
+          background-color: #A3C43B;
+      }
+
+
  * {
    font-family: "Nanum Gothic", sans-serif;
    box-sizing: border-box !important;
@@ -43,6 +180,11 @@
  .dohyeon { font-family: 'Do Hyeon', sans-serif;}
  .gothic { font-family: 'Gothic A1', sans-serif;}
 
+#teamname {
+  margin-top: 60px !important;
+  margin-left: 50px !important;
+}
+
  .landing-wrapper {
          display: table;
          width: 100%;
@@ -67,7 +209,7 @@
          margin-top: 50px;
          margin-bottom: 15px;}
 
- .card-image { width: 286px; height: 180px;}
+ .card-image { width: 238px; height: 180px;}
 
  .box { width: 150px; height: 180px; border-radius: 5px; background: url('yello.jpg');}
 

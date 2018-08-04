@@ -2,29 +2,117 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+<script src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+<!-- 태엽 -->
 <div class="container", style="margin-top: 150px;">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">위로</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <p style="margin-top: 50px;"><a href="#" class="links text-secondary", style="font-weight: bold;">홈</a> > <a href="#" class="links text-secondary" style="font-weight: bold">상담, 컨설팅</a> > <a href="#" class="links text-secondary" style="font-weight: bold">운세</a></p>
+                <img style="width: 600px; margin-top: 50px;" height="450px" src="https://static.wixstatic.com/media/8b38bc_46feb0c258b34023992b30a622811335.jpg/v1/fill/w_560,h_466,al_c,lg_1,q_80/8b38bc_46feb0c258b34023992b30a622811335.webp" alt="fortune">
+                
+                <p class="star_rating", style="margin-top:50px; margin-left:180px">
+                        <a href="#" class="on">★</a>
+                        <a href="#" class="on">★</a>
+                        <a href="#" class="on">★</a>
+                        <a href="#" class="on">★</a>
+                        <a href="#" class="on">★</a>
+                        <h4 style="margin-left:210px">4.9점<strong>(25개의 평가)</strong></h4>
+                </p>
+                
+            </div>
+            <div class="col-4">
+                <h5 style="font-weight: bold; margin-top: 150px;">&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;정확한 사주풀이 해드립니다</h5>
+                <button class="btn btn-warning dropdown-toggle btn-lg btn-block" type="button" id="menuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>30,000원 STANDARD</strong></button>
+                <div class="dropdown-menu1" aria-labelledby="dropdownMenuButton" style="display: none">
+                    <div class="standard-dropdown">
+                        <p style="text-align: center; margin-top: 5px;"><strong>기본사주풀이</strong></p>
+                        <p id="smalltext" style="text-align: center;">개인의 전반적 사주풀이 진로/적성/연애/사업<br>금전/시험 한해신수X</p>
+                        <div class="row">
+                            <div class="col-6"><p id="smalltext">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i class="far fa-check-circle"></i>상담 횟수: 1회</p></div>
+                            <div class="col-6"><p id="smalltext"><i class="far fa-check-circle"></i> 1회 당 상담시간: 45분</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6" id="smalltext">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i class="far fa-calendar-alt"></i>작업일: 1일</div>
+                            <div class="col-6" id="smalltext"><i class="far fa-edit"></i> 수정 횟수: 0회&emsp;&emsp;</div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg btn-block" id="mediumtext">구매하기 (30,000원 / VAT 포함)</button>
+                    </div>
+                </div>
+                <button class="btn btn-warning dropdown-toggle btn-lg btn-block" type="button" id="menuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>40,000원 DELUXE</strong></button>
+                <div class="dropdown-menu2" aria-labelledby="dropdownMenuButton" style="display: none">
+                    <div class="deluxe-dropdown">
+                        <p style="text-align: center; margin-top: 5px;"><strong>기본사주풀이+한해신수풀이</strong></p>
+                        <p id="smalltext" style="text-align: center;">개인의 전반적 사주풀이 진로/적성/연애/사업 금전/<br>시험 한해신수o</p>
+                        <div class="row">
+                            <div class="col-6"><p id="smalltext">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i class="far fa-check-circle"></i> 상담 횟수: 1회</p></div>
+                            <div class="col-6"><p id="smalltext"><i class="far fa-check-circle"></i> 1회 당 상담시간: 60분</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6" id="smalltext">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i class="far fa-calendar-alt"></i> 작업일: 1일</div>
+                            <div class="col-6" id="smalltext"><i class="far fa-edit"></i> 수정 횟수: 0회</div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg btn-block" id="mediumtext">구매하기 (40,000원 / VAT 포함)</button>
+                    </div>
+                </div>
+                <button class="btn btn-warning dropdown-toggle btn-lg btn-block" type="button" id="menuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>50,000원 PREMIUM</strong></button>
+                <div class="dropdown-menu3" aria-labelledby="dropdownMenuButton" style="display: none">
+                    <div class="premium-dropdown">
+                        <p style="text-align: center; margin-top: 5px;"><strong>궁합풀이</strong></p>
+                        <p id="smalltext" style="text-align: center;">남녀 사주 궁합풀이</p>
+                        <div class="row">
+                            <div class="col-6"><p id="smalltext">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i class="far fa-check-circle"></i> 상담 횟수: 1회</p></div>
+                            <div class="col-6"><p id="smalltext"><i class="far fa-check-circle"></i> 1회 당 상담시간: 60분</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6" id="smalltext">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i class="far fa-calendar-alt"></i> 작업일: 1일</div>
+                            <div class="col-6" id="smalltext"><i class="far fa-edit"></i> 수정 횟수: 0회</div>
+                        </div>
+                        <button type="button" class="btn btn-light btn-lg btn-block" id="mediumtext">구매하기 (50,000원 / VAT 포함)</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+<div class="container", style="margin-top: 150px;">   
     <div class="row justify-content-center">
     <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active text-secondary" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="true">서비스설명</a>
-          <a class="nav-item nav-link text-secondary" id="nav-price-tab" data-toggle="tab" href="#nav-price" role="tab" aria-controls="nav-price" aria-selected="false">가격정보</a>
-          <a class="nav-item nav-link text-secondary" id="nav-cancel-tab" data-toggle="tab" href="#nav-cancel" role="tab" aria-controls="nav-cancel" aria-selected="false">취소 및 환불규정</a>
-          <a class="nav-item nav-link text-secondary" id="nav-eval-tab" data-toggle="tab" href="#nav-eval" role="tab" aria-controls="nav-eval" aria-selected="false">서비스평가</a>
+        <div class="nav nav-tabs", style="margin-top: 50px" id="nav-tab" role="tablist">
+          <a style="width: 200px" class="nav-item nav-link active text-secondary" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="true">&emsp;&emsp;&nbsp;&nbsp;<strong>서비스설명</strong></a>
+          <a style="width: 200px" class="nav-item nav-link text-secondary" id="nav-price-tab" data-toggle="tab" href="#nav-price" role="tab" aria-controls="nav-price" aria-selected="false">&emsp;&emsp;&emsp;&nbsp;<strong>가격정보</strong></a>
+          <a style="width: 200px" class="nav-item nav-link text-secondary" id="nav-cancel-tab" data-toggle="tab" href="#nav-cancel" role="tab" aria-controls="nav-cancel" aria-selected="false">&emsp;&nbsp;&nbsp;<strong>취소 및 환불규정</strong></a>
+          <a style="width: 200px" class="nav-item nav-link text-secondary" id="nav-eval-tab" data-toggle="tab" href="#nav-eval" role="tab" aria-controls="nav-eval" aria-selected="false">&emsp;&emsp;&nbsp;&nbsp;<strong>서비스평가</strong></a>
         </div>
     </nav>
     </div>
     <div class="tab-content row justify-content-center", id="nav-tabContent">
-        <div class="tab-pane fade show active", style="margin-top: 80px;" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
-
+        <div class="tab-pane fade show active", style="margin-top: 80px; margin-bottom: 100px" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+          <%=image_tag "intro.png", :style => "display: table; margin-left: auto; margin-right: auto;" %>
+          <%=image_tag "service1.png", :style => "margin-top : 70px; display: table; margin-left: auto; margin-right: auto;" %>
+          <%=image_tag "service2.png", :style => "display: table; margin-left: auto; margin-right: auto;" %>
+          <%=image_tag "intro2", :style => "margin-top : 70px;display: table; margin-left: auto; margin-right: auto;"%>
+          <%=image_tag "intro3", :style => "margin-top : 10px; display: table; margin-left: auto; margin-right: auto;"%>
+          <%=image_tag "intro4", :style => "margin-top : 10px; display: table; margin-left: auto; margin-right: auto;"%>
+          <%=image_tag "intro5", :style => "margin-top : 10px; display: table; margin-left: auto; margin-right: auto;"%>  
         </div>
-        <div class="tab-pane fade" id="nav-price" role="tabpanel" aria-labelledby="nav-price-tab">
-            <h3>가격정보</h3>
-            <p>얼마일까?</p>
+        <div class="tab-pane fade" id="nav-price", style="margin-top: 80px" role="tabpanel" aria-labelledby="nav-price-tab">
+           <%=image_tag "price", :style => "margin-bottom: 80px"%> 
         </div>
         <div class="tab-pane fade" id="nav-cancel" role="tabpanel" aria-labelledby="nav-cancel-tab">
-            <h3>취소 및 환불 규정</h3>
-            <p>환불 안해줄거임 ㅎㅎ</p>
+            <%=image_tag "service3", :style => "margin-top: 70px; margin-bottom: 80px"%>
         </div>
         <div class="tab-pane fade" id="nav-eval" role="tabpanel" aria-labelledby="nav-eval-tab">
             <div class="newreview"></div>
@@ -73,42 +161,82 @@
              <%= f.hidden_field :point, id: "point" %>
              <%= f.submit "댓글쓰기", id: "review_submit" %>
             <% end %>
-          </div>
+            </div>
         </div>
     </div>
 </div>
+
 <script type="text/javascript">
-  $("#review_submit").on("click", function(){
-   $("#review_content").val("");
+    $("#review_submit").on("click", function(){
+     $("#review_content").val("");
+  
+     var p = "★"
+     if ($("#point").val() == 1){
+       p = "★"
+     }
+     else if ($("#point").val() == 2){
+       p = "★★"
+     }
+     else if ($("#point").val() == 3){
+       p = "★★★"
+     }
+     else if ($("#point").val() == 4){
+       p = "★★★★"
+     }
+     else{
+       p = "★★★★★"
+     }
+  
+     $(".newreview").append("<div class='review__contanier'>"+ "<p class='review__dataandpoint'><span class='review--date'>"+
+     new Date().toISOString().substring(0,10) + " | "+"<span class='review--point'>"+ p +"<p class='review--content'>"+ $("#content").val() +"</h1>"+
+     "</span></span></p>"+"<p class='review--user'>"+ "pkch93" +"</p>");
+    });
+  
+    $('.field--starpoint span').click(function(){
+     $(this).parent().children('span').removeClass('staron');
+     $(this).addClass('staron').prevAll('span').addClass('staron');
+     var x = $(this).attr('value')
+     $("#point").val(x);
+     $("#star_point").text(x+"점");
+     return false;
+    });
+  </script>
+  
 
-   var p = "★"
-   if ($("#point").val() == 1){
-     p = "★"
-   }
-   else if ($("#point").val() == 2){
-     p = "★★"
-   }
-   else if ($("#point").val() == 3){
-     p = "★★★"
-   }
-   else if ($("#point").val() == 4){
-     p = "★★★★"
-   }
-   else{
-     p = "★★★★★"
-   }
+<script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
 
-   $(".newreview").append("<div class='review__contanier'>"+ "<p class='review__dataandpoint'><span class='review--date'>"+
-   new Date().toISOString().substring(0,10) + " | "+"<span class='review--point'>"+ p +"<p class='review--content'>"+ $("#content").val() +"</h1>"+
-   "</span></span></p>"+"<p class='review--user'>"+ "pkch93" +"</p>");
-  });
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
 
-  $('.field--starpoint span').click(function(){
-   $(this).parent().children('span').removeClass('staron');
-   $(this).addClass('staron').prevAll('span').addClass('staron');
-   var x = $(this).attr('value')
-   $("#point").val(x);
-   $("#star_point").text(x+"점");
-   return false;
-  });
-</script>
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        $( ".star_rating a" ).click(function() {
+            $(this).parent().children("a").removeClass("on");
+            $(this).addClass("on").prevAll("a").addClass("on");
+            return false;
+        });
+        
+        $("#menuButton1").click(function() {
+            $(".dropdown-menu1").toggle();
+        });
+
+        $("#menuButton2").click(function() {
+            $(".dropdown-menu2").toggle("slow");
+        });
+
+        $("#menuButton3").click(function() {
+            $(".dropdown-menu3").toggle("slow");
+        });
+    </script>
+

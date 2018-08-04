@@ -1,0 +1,107 @@
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>   
+
+
+<div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="border-bottom border-warning mt-1" style="width: 200px; margin-top: 150px !important;">
+        <p class="text-center text-secondary h2 mb-2 mt-5">자주 묻는 질문</p>
+    </div>
+    <div class="d-flex justify-content-center mt-5" >
+        <div class="accordion mr-5" id="accordionExample" style="width: 450px; margin-top: 100px;">
+            <div class="card">
+                <div class="card-header bg-white" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-secondary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <span class="badge badge-pill badge-warning">1</span> 판매 금액은 어떻게 설정해야 하나요?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        판매 금액은 스스로 결정하실 수 있습니다. 단, 금액은 vat를 포함한 금액으로 설정해주세요!
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="card-header bg-white" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span class="badge badge-pill badge-warning">2</span> 사업자로 등록해야 판매가 가능한가요?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        국세청에서는 지속적으로 수익이 발생하는 자에게 사업자 등록을 요구하고 있습니다. 사업자 미등록으로 인한 세무상 불이익이 발생될 수 있으므로 사업자 등록을 권장합니다.
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="card-header bg-white" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <span class="badge badge-pill badge-warning">3</span> 서비스 등록은 무료인가요?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        네, 서비스를 등록하는 데에는 아무런 비용도 들지 않습니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion mr-5" id="accordionExample" style="width: 450px; margin-top: 100px;">
+            <div class="card">
+                <div class="card-header bg-white" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-secondary" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            <span class="badge badge-pill badge-warning">4</span> 서비스 등록을 위해 무엇이 필요한가요?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse " aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        판매하고자 하는 서비스의 구체적인 내용과 금액 그리고 대표 이미지만 준비해주시면 서비스를 등록하실 수 있습니다.
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="card-header bg-white" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <span class="badge badge-pill badge-warning">5</span> 서비스가 팔리지 않는다면 지불해야할 수수료가 없는 건가요?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse " aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        네, 맞습니다. 만일 서비스가 판매되지 않았다면, 판매 수수료도 부과되지 않습니다.
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="card-header bg-white" id="headingSix">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <span class="badge badge-pill badge-warning">6</span> 어떤 서비스까지 등록할 수 있는건가요?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSix" class="collapse " aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div class="card-body">
+                        사주, 운세, 신점, 관상, 손금 등 다양한 분야로 등록 가능합니다. 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-warning mt-5 fixed-bottom" style="width: 100%; height: 150px;">
+    <br><br>
+    <p class="font-weight-bold text-center">Asura Balbalta.</p>
+    <p class="font-weight-bold text-center">더 많은 질문은 contact를 통해 해주세요 !</p>
+</div>
