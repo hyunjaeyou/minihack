@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +20,7 @@
                 <button type="button" class="btn btn-warning mr-2"><%= link_to '로그인', root_path, class:"text-dark" %></button>
                 <button type="button" class="btn btn-warning"><%= link_to '회원가입', root_path, class:"text-dark" %></button>
             </div>
-            <div class="d-flex flex-column align-items-center mt-5">
+            <div class="d-flex flex-column align-items-center mt-5 mb-5">
                 <h3 class="text-center text-warning">당신을 위한 맞춤 사주</h3>
                 <form class="form-inline">
                     <label class="sr-only" for="inlineFormInputName2">Name</label>
@@ -34,27 +33,51 @@
     </div>
         <!-- 두번째 페이지 -->
     <div class="swiper-slide">
-        <div class="d-flex flex-column align-items-center mt-5">
+        <div class="d-flex flex-column align-items-center mt-5 mb-5">
             <h5 class="text-center text-warning">카테고리</h5>
             <div class="d-flex">
-                <div class="box mr-1">사주</div>
-                <div class="box mr-1">작명</div>
-                <div class="box mr-1">관상</div>
-                <div class="box mr-1">타로</div>
-                <div class="box">손금</div>
+                <div class="box mr-1">
+                    <%= image_tag'bb.svg', class: "icon" %>
+                    <p class="text-center text-warning">사주</p>
+                </div>
+                <div class="box mr-1">
+                    <%= image_tag'name.svg', class: "icon" %>
+                    <p class="text-center text-warning">작명</p>
+                </div>
+                <div class="box mr-1">
+                    <%= image_tag'ee.svg', class: "icon" %>
+                    <p class="text-center text-warning">관상</p>
+                </div>
+                <div class="box mr-1">
+                    <%= image_tag'tarot.png', class: "icon" %>
+                    <p class="text-center text-warning">타로</p>
+                </div>
+                <div class="box">
+                    <%= image_tag'hand.svg', class: "icon" %>
+                    <p class="text-center text-warning">손금</p>
+                </div>
             </div>
         </div>
     </div>
         <!-- 세번째 페이지 -->
     <div class="swiper-slide">
-        <div></div>
+      <div class="d-flex justify-content-center bg-light mt-5">
+        <div class="box2 mr-5 mt-5">
+            <h6 class="text-center"><strong>전문적인 서비스</strong></h6>
+            <h6 class="text-center">각 분야 전문가의 차별화된 서비스를 이용해보세요</h6>
+        </div>
+        <div class="box2 mr-5 mt-5">
+            <h6 class="text-center"><strong>만족도 높은 서비스</strong></h6>
+            <h6 class="text-center">이용자이 직접 평가한 좋은 업체들을 보여드립니다</h6>
+        </div>
+        <div class="box2 mt-5">
+            <h6 class="text-center"><strong>안전 거래 시스템</strong></h6>
+            <h6 class="text-center">수많은 거래를 완료한 안전한 주문 시스템을 이용해보세요</h6>
+        </div>
+      </div>
     </div>
     </div>
     <div class="swiper-pagination" style="position:fixed;"></div>
 </div>
 </body>
 </html>
-=======
-<h1>Sajus#index</h1>
-<p>Find me in app/views/sajus/index.html.erb</p>
->>>>>>> 0cde4d9f2f9f9a5aed9761a241496a32323c93e2

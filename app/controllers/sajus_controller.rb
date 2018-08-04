@@ -12,10 +12,7 @@ class SajusController < ApplicationController
   end
 
   def detail
-<<<<<<< HEAD
-=======
     @review = Review.all.order(point: :desc)
->>>>>>> 0cde4d9f2f9f9a5aed9761a241496a32323c93e2
   end
 
   def payment
