@@ -1,8 +1,10 @@
+<div id="reviews">
 <% @reviews.each do |r| %>
-<p id="reviews">
-  <h1><%= r.content %></h1>
-</p>
+  <p>
+    <h1><%= r.content %></h1>
+  </p>
 <% end %>
+</div>
 
 <%= form_for @review, url: {controller: :sajus, action: :newreview}, remote: true, id: "review_content" do |f| %>
   <%= f.hidden_field :user_id, value: "pkch93" %>
