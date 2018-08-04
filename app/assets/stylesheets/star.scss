@@ -1,0 +1,28 @@
+.fieid--starpoint{
+
+}
+
+.field__label{
+  font-weight: bold;
+}
+.field__radio--point{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    color: #777777;
+    cursor: pointer;
+}
+
+.field__radio--point.staron{
+    margin-left: 0;
+    color: #FFD700;
+}
+
+.field__radio--button{
+    display: none;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}

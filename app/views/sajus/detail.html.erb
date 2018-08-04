@@ -1,22 +1,114 @@
-<div id="reviews">
-<% @reviews.each do |r| %>
-  <p>
-    <h1><%= r.content %></h1>
-  </p>
-<% end %>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<div class="container", style="margin-top: 150px;">
+    <div class="row justify-content-center">
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active text-secondary" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="true">서비스설명</a>
+          <a class="nav-item nav-link text-secondary" id="nav-price-tab" data-toggle="tab" href="#nav-price" role="tab" aria-controls="nav-price" aria-selected="false">가격정보</a>
+          <a class="nav-item nav-link text-secondary" id="nav-cancel-tab" data-toggle="tab" href="#nav-cancel" role="tab" aria-controls="nav-cancel" aria-selected="false">취소 및 환불규정</a>
+          <a class="nav-item nav-link text-secondary" id="nav-eval-tab" data-toggle="tab" href="#nav-eval" role="tab" aria-controls="nav-eval" aria-selected="false">서비스평가</a>
+        </div>
+    </nav>
+    </div>
+    <div class="tab-content row justify-content-center", id="nav-tabContent">
+        <div class="tab-pane fade show active", style="margin-top: 80px;" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+
+        </div>
+        <div class="tab-pane fade" id="nav-price" role="tabpanel" aria-labelledby="nav-price-tab">
+            <h3>가격정보</h3>
+            <p>얼마일까?</p>
+        </div>
+        <div class="tab-pane fade" id="nav-cancel" role="tabpanel" aria-labelledby="nav-cancel-tab">
+            <h3>취소 및 환불 규정</h3>
+            <p>환불 안해줄거임 ㅎㅎ</p>
+        </div>
+        <div class="tab-pane fade" id="nav-eval" role="tabpanel" aria-labelledby="nav-eval-tab">
+            <div class="newreview"></div>
+            <div id="reviews">
+            <% @reviews.each do |r| %>
+              <div class="review__contanier">
+                <p class="review__dataandpoint"><span class="review--date"><%= r.created_at.to_date %> | <span class="review--point">
+                  <% if r.point == 1 %>
+                    ★
+                  <% elsif r.point == 2%>
+                    ★★
+                  <% elsif r.point == 3%>
+                    ★★★
+                  <% elsif r.point == 4%>
+                    ★★★★
+                  <% elsif r.point == 5%>
+                    ★★★★★
+                  <% end %>
+                </span></p>
+                <p class="review--content">
+                  <%= r.content %>
+                </p>
+                <p class="review--user"><%= r.user_id %></p>
+              </div>
+            <% end %>
+            </div>
+            <div class="review__form">
+              <h3 class="review--title">리뷰 작성</h3>
+            <%= form_for @review, url: {controller: :sajus, action: :newreview}, remote: true, id: "review_content" do |f| %>
+              <%= label_tag :point, "별점 주기", class: "field__label"%>
+              <div class="field field--starpoint">
+               <%= f.radio_button :point, 1, checked: true, id: "point--1", class: "field__radio--button"%>
+                 <span class="field__radio--point staron" value="1">★</span>
+               <%= f.radio_button :point, 2, id: "point--2", class: "field__radio--button"%>
+                 <span class="field__radio--point " value="2">★</span>
+               <%= f.radio_button :point, 3, id: "point--3", class: "field__radio--button"%>
+                 <span class="field__radio--point" value="3">★</span>
+               <%= f.radio_button :point, 4, id: "point--4", class: "field__radio--button"%>
+                 <span class="field__radio--point " value="4">★</span>
+               <%= f.radio_button :point, 5, id: "point--5", class: "field__radio--button"%>
+                 <span class="field__radio--point " value="5">★</span>
+             </div>
+             <%= f.hidden_field :user_id, value: "pkch93" %>
+             <%= label_tag :content, "리뷰 작성", class: "field__content field__label" %>
+             <%= f.text_area :content, id: "content" %>
+             <%= f.hidden_field :point, id: "point" %>
+             <%= f.submit "댓글쓰기", id: "review_submit" %>
+            <% end %>
+          </div>
+        </div>
+    </div>
 </div>
-
-<%= form_for @review, url: {controller: :sajus, action: :newreview}, remote: true, id: "review_content" do |f| %>
-  <%= f.hidden_field :user_id, value: "pkch93" %>
-  <%= f.hidden_field :point, value: "4" %>
-  <%= f.text_area :content, id: "content" %>
-  <%= f.submit "댓글쓰기", id: "review_submit" %>
-<% end %>
-
-
 <script type="text/javascript">
   $("#review_submit").on("click", function(){
-    $("#review_content").val("");
-    $("#reviews").append("<h1>"+ $("#content").val() +"</h1>");
+   $("#review_content").val("");
+
+   var p = "★"
+   if ($("#point").val() == 1){
+     p = "★"
+   }
+   else if ($("#point").val() == 2){
+     p = "★★"
+   }
+   else if ($("#point").val() == 3){
+     p = "★★★"
+   }
+   else if ($("#point").val() == 4){
+     p = "★★★★"
+   }
+   else{
+     p = "★★★★★"
+   }
+
+   $(".newreview").append("<div class='review__contanier'>"+ "<p class='review__dataandpoint'><span class='review--date'>"+
+   new Date().toISOString().substring(0,10) + " | "+"<span class='review--point'>"+ p +"<p class='review--content'>"+ $("#content").val() +"</h1>"+
+   "</span></span></p>"+"<p class='review--user'>"+ "pkch93" +"</p>");
+  });
+
+  $('.field--starpoint span').click(function(){
+   $(this).parent().children('span').removeClass('staron');
+   $(this).addClass('staron').prevAll('span').addClass('staron');
+   var x = $(this).attr('value')
+   $("#point").val(x);
+   $("#star_point").text(x+"점");
+   return false;
   });
 </script>

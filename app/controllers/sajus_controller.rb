@@ -1,4 +1,5 @@
 class SajusController < ApplicationController
+  before_action :nav1, except: [:index]
   def index
   end
 
@@ -24,4 +25,8 @@ class SajusController < ApplicationController
     @review.save
   end
 
+  private
+    def nav1
+      @nav1 = true
+    end
 end

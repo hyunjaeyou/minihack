@@ -27,3 +27,168 @@
 }
 
 .icon { width: 50px; height: 50px; margin-left: 50px; margin-top: 50px; margin-bottom: 15px;}
+
+.search__result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search__result .result__col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__result .result__col:last-child {
+  border: 0.5px solid rgb(224, 224, 224);
+  padding: 0px 10px;
+  margin: 2px 0px;
+  border-radius: 5px;
+}
+
+.global-body {
+  margin-top: 200px;
+}
+
+section.main {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search__menu {
+  width: 200px;
+}
+
+.search__menu .search__title {
+  display: block;
+  border-bottom: 1px solid #fed318;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.menu__items {
+  margin: 0px 15px;
+}
+
+.menu__items .menu__category {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  padding-bottom: 10px;
+}
+
+.menu__items .menu__item {
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 100%;
+}
+
+.search__category {
+}
+
+.search__cards {
+  width: 870px;
+}
+
+.search__card {
+  display: inline-block;
+  width: 199px;
+  height: 320px;
+  border: 0.5px solid rgb(224, 224, 224);
+  margin: 0px 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.search__card:hover {
+  box-shadow: 0 0 20px 0 #ccc;
+  transition: 0.25s;
+}
+
+.search__card:nth-child(1) {
+  margin-left: 0;
+}
+
+.search__card:nth-child(5) {
+  margin-left: 0;
+}
+
+.search__card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.card__pic {
+  height: 160px;
+  position: relative;
+}
+
+.card__cover {
+  width: 100%;
+  height: 100%;
+}
+
+.card__profile-pic {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  border: 2.5px solid white;
+  background-color: white;
+}
+
+.card__content {
+  margin: 0px 10px;
+}
+
+.card__title {
+  margin-top: 15px;
+  font-size: 13px;
+  color: rgb(83, 83, 83);
+}
+
+.card__text {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.card__price {
+  margin-top: 10px;
+  text-align: right;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.card__footer {
+  height: 35px;
+  margin-top: 10px;
+  border-top: 0.5px solid rgb(224, 224, 224);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__colum {
+  font-size: 14px;
+}
+
+.footer__colum svg {
+  font-size: 95%;
+  color: rgb(224, 224, 224);
+}
+
+.stars svg {
+  color: #fed318;
+  margin-right: 4px;
+}
+
+.stars {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  color: rgb(163, 163, 163);
+}

@@ -1,31 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="saju.css" />
-    <script src="saju.css"></script>
-</head>
-<body>
-<div class="swiper-container swiper-init">
+<div class="swiper-container">
     <div class="swiper-wrapper">
     <!-- 첫번째 페이지 -->
     <div class="swiper-slide">
         <div class="d-flex flex-column">
-        <div class="bg-light">
-            <div class="d-flex justify-content-end mt-3 mr-3">
+        <div class="landing-wrapper">
+          <div class="d-flex justify-content-between nanum">
+            <p class="h3 mt-3 text-start">Asura-balbalta</p>
+            <div class=" mt-3 mr-3">
                 <button type="button" class="btn btn-warning mr-2"><%= link_to '로그인', root_path, class:"text-dark" %></button>
                 <button type="button" class="btn btn-warning"><%= link_to '회원가입', root_path, class:"text-dark" %></button>
             </div>
-            <div class="d-flex flex-column align-items-center mt-5 mb-5">
-                <h3 class="text-center text-warning">당신을 위한 맞춤 사주</h3>
+          </div>
+            <div class="d-flex flex-column align-items-center mb-5" style="margin-top: 200px;">
+                <h1 class="text-center text-warning dohyeon mb-4">당신을 위한 맞춤 사주</h1>
                 <form class="form-inline">
                     <label class="sr-only" for="inlineFormInputName2">Name</label>
-                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2">
-                    <button type="submit" class="btn btn-outline-warning mb-2">SEARCH !</button>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" style="width: 500px;">
+                    <button type="submit" class="btn btn-outline-warning mb-2"><%= link_to 'SEARCH', sajus_search_path, class:"text-warning" %></button>
                 </form>
             </div>
         </div>
@@ -33,35 +24,57 @@
     </div>
         <!-- 두번째 페이지 -->
     <div class="swiper-slide">
-        <div class="d-flex flex-column align-items-center mt-5 mb-5">
-            <h5 class="text-center text-warning">카테고리</h5>
+        <div class="d-flex flex-column align-items-center mb-5 nanum land-wrapper">
+            <h3 class="text-center text-warning mb-5" style="margin-top: 40px;">C A T E G O R Y</h3>
             <div class="d-flex">
-                <div class="box mr-1">
+                <div class="box mr-3">
                     <%= image_tag'bb.svg', class: "icon" %>
-                    <p class="text-center text-warning">사주</p>
+                    <p class="text-center text-white">사주</p>
                 </div>
-                <div class="box mr-1">
+                <div class="box mr-3">
                     <%= image_tag'name.svg', class: "icon" %>
-                    <p class="text-center text-warning">작명</p>
+                    <p class="text-center text-white">작명</p>
                 </div>
-                <div class="box mr-1">
+                <div class="box mr-3">
                     <%= image_tag'ee.svg', class: "icon" %>
-                    <p class="text-center text-warning">관상</p>
+                    <p class="text-center text-white">관상</p>
                 </div>
-                <div class="box mr-1">
+                <div class="box mr-3">
                     <%= image_tag'tarot.png', class: "icon" %>
-                    <p class="text-center text-warning">타로</p>
+                    <p class="text-center text-white">타로</p>
                 </div>
                 <div class="box">
                     <%= image_tag'hand.svg', class: "icon" %>
-                    <p class="text-center text-warning">손금</p>
+                    <p class="text-center text-white">손금</p>
+                </div>
+            </div>
+            <div class="d-flex" style="margin-top: 30px;">
+                <div class="box mr-3">
+                    <%= image_tag'687824.svg', class: "icon" %>
+                    <p class="text-center text-white">운세</p>
+                </div>
+                <div class="box mr-3">
+                    <%= image_tag'687824.svg', class: "icon" %>
+                    <p class="text-center text-white">신점</p>
+                </div>
+                <div class="box mr-3">
+                    <%= image_tag'687824.svg', class: "icon" %>
+                    <p class="text-center text-white">연애운</p>
+                </div>
+                <div class="box mr-3">
+                    <%= image_tag'687824.svg', class: "icon" %>
+                    <p class="text-center text-white">재물운</p>
+                </div>
+                <div class="box">
+                    <%= image_tag'687824.svg', class: "icon" %>
+                    <p class="text-center text-white">취업운</p>
                 </div>
             </div>
         </div>
     </div>
         <!-- 세번째 페이지 -->
-    <div class="swiper-slide">
-      <div class="d-flex justify-content-center bg-light mt-5">
+    <div class="swiper-slide  bg-light gothic">
+      <div class="d-flex justify-content-center">
         <div class="box2 mr-5 mt-5">
             <h6 class="text-center"><strong>전문적인 서비스</strong></h6>
             <h6 class="text-center">각 분야 전문가의 차별화된 서비스를 이용해보세요</h6>
@@ -75,9 +88,71 @@
             <h6 class="text-center">수많은 거래를 완료한 안전한 주문 시스템을 이용해보세요</h6>
         </div>
       </div>
+      <p class="h3 text-center">RANKING</p>
+      <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+            <%= image_tag'dddd.jpg', class: "card-image" %>
+            <div class="card-body">
+                <h5 class="card-title"><span class="badge badge-pill badge-warning">1</span> 운세집</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <%= image_tag'dddd.jpg', class: "card-image" %>
+            <div class="card-body">
+                <h5 class="card-title"><span class="badge badge-pill badge-warning">2</span> 타로집</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <%= image_tag'dddd.jpg', class: "card-image" %>
+            <div class="card-body">
+                <h5 class="card-title"><span class="badge badge-pill badge-warning">3</span> 점집</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide nanum">
+        <p class="h2 text-center mt-5">C O N T A C T</p>
+        <div class="d-flex flex-column justify-content-center align-items-center" >
+          <table class="table table-borderless" style="width: 600px; margin-top: 50px;">
+            <tbody>
+                <tr><td><span class="badge badge-pill badge-warning">1</span> (주) 아수라 발발타</td></tr>
+                <tr><td><span class="badge badge-pill badge-warning">2</span> 대표: 지현, 우제, 경철, 소연, 현재, 태엽, 한울</td></tr>
+                <tr><td><span class="badge badge-pill badge-warning">3</span> 02 ) 1234 - 4567</td></tr>
+                <tr><td><span class="badge badge-pill badge-warning">4</span> 서울시 용산구 원효로</td></tr>
+                <tr><td><span class="badge badge-pill badge-warning">5</span> asura@gmail.com</td></tr>
+            </tdoby>
+          </table>
+        </div>
+        <div></div>
     </div>
     </div>
     <div class="swiper-pagination" style="position:fixed;"></div>
 </div>
-</body>
-</html>
+
+<script src="path/to/jquery.js"></script>
+<script src="path/to/swiper.jquery.min.js"></script>
+<script>
+        var mySwiper = new Swiper ('.swiper-container', {
+          // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            mousewheel: {
+                invert: true,
+                forceToAxis: true,
+                releaseOnEdges: true,
+                sensitivity: 0.1
+            }
+
+
+
+
+        })
+        </script>
