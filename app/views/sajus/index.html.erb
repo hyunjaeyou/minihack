@@ -4,19 +4,23 @@
     <div class="swiper-slide landing-wrapper">
         <div class="d-flex flex-column">
           <div class="d-flex justify-content-between nanum">
-            <p class="h3 mt-3 text-start" id="teamname">Asura-balbalta</p>
+          <a class="logo" href="/" style="margin-top: 50px; margin-left: 30px;">
+            <img class="logo__img" src="<%= asset_path "logo-white.png" %>" alt="logo">
+          </a>
             <div class=" mt-3 mr-3">
-                <button type="button" class="btn btn-warning mr-2" style="margin-top: 50px !important"><%= link_to '로그인', root_path, class:"text-dark" %></button>
-                <button type="button" class="btn btn-warning" style="margin-top: 50px !important"><%= link_to '회원가입', root_path, class:"text-dark" %></button>
+                <button type="button" class="btn btn-warning mr-2" style="margin-top: 50px !important"><%= link_to '판매 시작하기', sajus_seller_path, class:"text-dark" %></button>
+                <button type="button" class="btn btn-warning" style="margin-top: 50px !important; margin-right: 5px !important;"><%= link_to '로그아웃', root_path, class:"text-dark" %></button>
+                <button type="button" class="btn btn-warning" style="margin-top: 50px !important"><%= link_to '자주 묻는 질문', sajus_qna_path, class:"text-dark" %></button>
             </div>
           </div>
             <div class="d-flex flex-column align-items-center mb-5" style="margin-top: 300px;">
                 <h1 class="text-center text-warning dohyeon mb-4">당신을 위한 맞춤 사주</h1>
                 <form class="form-inline" action="<%=sajus_search_path%>" method="get">
                     <label class="sr-only" for="inlineFormInputName2">Name</label>
-                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" style="width: 500px;">
+                    <input type="text" class="form-control mb-2 mr-sm-2" placeholder="나의 #재물운 은?" id="inlineFormInputName2" style="width: 500px;">
                     <%= link_to "SEARCH", sajus_search_path, class:"btn btn-outline-warning" %>
                 </form>
+                <h6 class="text-center text-white-50 dohyeon mb-4" style="margin-top: 5px; margin-right:85px !important;">#연애운 &emsp;&emsp; #손금 보는 법 &emsp;&emsp; #사업 &emsp;&emsp; #작명 &emsp;&emsp; #올해 운세 &emsp;&emsp; #학업운</h6>
             </div>
         </div>
     </div>
@@ -25,14 +29,14 @@
         <div class="d-flex flex-column align-items-center mb-5 nanum land-wrapper">
             <h3 class="text-center text-warning mb-5" style="margin-top: 200px;">C A T E G O R Y</h3>
             <div class="d-flex">
-                <div class="box mr-3">
+                <a href="/sajus/saju"><div class="box mr-3">
                     <%= image_tag'bb.svg', class: "icon" %>
                     <p class="text-center text-white">사주</p>
-                </div>
-                <div class="box mr-3">
+                </div></a>
+                <a href="/sajus/jakmyung"><div class="box mr-3">
                     <%= image_tag'name.svg', class: "icon" %>
                     <p class="text-center text-white">작명</p>
-                </div>
+                </div></a>
                 <div class="box mr-3">
                     <%= image_tag'ee.svg', class: "icon" %>
                     <p class="text-center text-white">관상</p>
@@ -73,26 +77,26 @@
         <!-- 세번째 페이지 -->
     <div class="swiper-slide  bg-light gothic">
       <p class="h3 text-center" style="margin-top: 180px">RANKING</p>
-      <div class="d-flex justify-content-center">
-        <div class="card" style="width: 16rem;">
+      <div class="d-flex justify-content-center" style="margin-top: 30px;">
+        <div class="card" style="width: 19.1rem;">
             <%= image_tag'dddd.jpg', class: "card-image"%>
             <div class="card-body">
                 <h5 class="card-title"><span class="badge badge-pill badge-warning">1</span> 운세집</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">어디에서도 볼 수 없었던 최고급 일년운세를 제공합니다. 일년 총운과 함께 각 달의 운을 분야별로 상황에 맞게 구체적으로 풀이해 드립니다. 좋은 일과 나쁜 일을 미리 알려드립니다.</p>
             </div>
         </div>
-        <div class="card" style="width: 16rem;">
-            <%= image_tag'dddd.jpg', class: "card-image" %>
+        <div class="card" style="width: 19.1rem;">
+            <%= image_tag'taro.jpg', class: "card-image" %>
             <div class="card-body">
                 <h5 class="card-title"><span class="badge badge-pill badge-warning">2</span> 타로집</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">500분의 실제 사례를 바탕으로 타로 해석을 통해 상담을 진행할 예정입니다. 털어놓지 못했던 고민들 허심탄회하게 얘기해주세요! 함께 천천히 고민을 해결해 보아요 :)</p>
             </div>
         </div>
-        <div class="card" style="width: 16rem;">
-            <%= image_tag'dddd.jpg', class: "card-image" %>
+        <div class="card" style="width: 19.1rem;">
+            <%= image_tag'dot.jpg', class: "card-image" %>
             <div class="card-body">
                 <h5 class="card-title"><span class="badge badge-pill badge-warning">3</span> 점집</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">용한 점집, 유명한 점집 어디 없나? 답답하고 일이 꼬이고 풀리지 않을 때 해결책을 제시해 드립니다.</p>
             </div>
         </div>
       </div>

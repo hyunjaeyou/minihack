@@ -333,3 +333,211 @@ a.links:link {
            border-radius: 5px;
            font-weight: 300;
          }
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+
+* {
+  font-family: "Nanum Gothic", sans-serif;
+  box-sizing: border-box !important;
+  font-size: 15px;
+}
+
+a {
+  color: inherit !important;
+}
+
+a:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.nanum {
+  font-family: "Nanum Gothic Coding", monospace;
+}
+.black {
+  font-family: "Black Han Sans", sans-serif;
+}
+.dohyeon {
+  font-family: "Do Hyeon", sans-serif;
+}
+.gothic {
+  font-family: "Gothic A1", sans-serif;
+}
+
+.box2 {
+  width: 180px;
+  height: 150px;
+}
+
+.nanum {
+  font-family: "Nanum Gothic Coding", monospace;
+}
+.black {
+  font-family: "Black Han Sans", sans-serif;
+}
+.dohyeon {
+  font-family: "Do Hyeon", sans-serif;
+}
+.gothic {
+  font-family: "Gothic A1", sans-serif;
+}
+
+.landing-wrapper {
+  display: table;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("pam.jpg");
+  background-position: center top;
+  height: 100%;
+  color: white;
+}
+
+.land-wrapper {
+  display: table;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("tarot.jpg");
+  background-position: center top;
+  height: 100%;
+  color: white;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.card-image {
+  width: 286px;
+  height: 180px;
+}
+
+.box {
+  width: 150px;
+  height: 180px;
+  border-radius: 5px;
+  background: url("yello.jpg");
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  position: fixed !important;
+  margin-right: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 2px !important;
+  height: 6vh !important;
+  margin: 2vh 0 !important;
+  display: block !important;
+  background: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f6921e !important;
+}
+
+header.header {
+  top: 0;
+  position: fixed;
+  padding-top: 20px;
+  margin-bottom: 80px;
+  width: 100%;
+  background: white;
+  z-index: 100;
+}
+
+.logo__img {
+  width: 200px;
+}
+.header .header__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header__col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__search-box {
+  position: relative;
+}
+
+.header__search-box svg {
+  position: absolute;
+  top: 14px;
+  right: 90px;
+  color: rgb(92, 92, 92);
+}
+
+.header__col input.header__search {
+  width: 350px;
+  padding: 10px 20px;
+  margin-right: 75px;
+  font-size: 14px;
+  background-color: #ffe67a;
+  border: none;
+}
+
+.header__col input.header__search:focus {
+  outline: none;
+}
+
+.header__col .header__item {
+  margin-left: 20px;
+}
+
+.header__item:last-child {
+  border: 0.5px solid rgb(224, 224, 224);
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #ffe67a;
+  font-size: 13px;
+  color: rgb(74, 74, 74);
+}
+
+.header__nav {
+  border-bottom: 1px solid #face0f;
+  display: flex;
+  justify-content: center;
+  padding-right: 200px;
+}
+
+.nav__items {
+  display: flex;
+  justify-content: space-around;
+  width: 450px;
+  margin-bottom: 7.5px;
+}
+
+.nav__item {
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.nav__item:hover {
+  background-color: #f4d037;
+  color: white;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+.nav__item--active {
+  background-color: #f4d037;
+  color: white !important;
+  border-radius: 5px;
+  font-weight: 300;
+}

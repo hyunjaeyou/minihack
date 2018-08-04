@@ -1,5 +1,7 @@
 class SajusController < ApplicationController
-  before_action :nav1, except: [:index]
+  before_action :nav1, except: [:index, :seller]
+  before_action :footer, except: [:qna]
+  
   def index
   end
 
@@ -25,8 +27,17 @@ class SajusController < ApplicationController
     @review.save
   end
 
+  def seller
+  end
+
+  def qna
+  end
   private
     def nav1
       @nav1 = true
+    end
+
+    def footer
+      @footer = true
     end
 end
