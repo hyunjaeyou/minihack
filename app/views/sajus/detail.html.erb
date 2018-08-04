@@ -1,2 +1,20 @@
-<h1>Sajus#detail</h1>
-<p>Find me in app/views/sajus/detail.html.erb</p>
+<% @reviews.each do |r| %>
+<p id="reviews">
+  <h1><%= r.content %></h1>
+</p>
+<% end %>
+
+<%= form_for @review, url: {controller: :sajus, action: :newreview}, remote: true, id: "review_content" do |f| %>
+  <%= f.hidden_field :user_id, value: "pkch93" %>
+  <%= f.hidden_field :point, value: "4" %>
+  <%= f.text_area :content, id: "content" %>
+  <%= f.submit "댓글쓰기", id: "review_submit" %>
+<% end %>
+
+
+<script type="text/javascript">
+  $("#review_submit").on("click", function(){
+    $("#review_content").val("");
+    $("#reviews").append("<h1>"+ $("#content").val() +"</h1>");
+  });
+</script>
