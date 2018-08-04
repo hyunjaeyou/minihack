@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="header__col">
-          <a href="./index4.html" class="header__item">판매 시작하기</a>
+          <a href="seller" class="header__item">판매 시작하기</a>
           <a href="#" class="header__item">로그아웃</a>
           <a href="#" class="header__item">자주 묻는 질문</a>
         </div>
@@ -25,7 +25,7 @@
 
     <div class="header__nav">
       <div class="nav__items">
-        <a href="saju" class="nav__item nav__item--active">사주</a>
+        <a href="saju" class="nav__item">사주</a>
         <a href="jakmyung" class="nav__item">작명</a>
         <a href="#" class="nav__item">타로</a>
         <a href="#" class="nav__item">관상</a>
@@ -33,4 +33,16 @@
         <a href="#" class="nav__item">점성술</a>
       </div>
     </div>
-  </header>
+</header>
+
+
+<script>
+  var pgurl = window.location.href.split("/")[4];
+  console.log(window.location.href.split("/")[4])
+  $(".nav__item").each(function() {
+    if($(this).attr("href").split("/")[0] == pgurl) {
+      console.log($(this).attr("href").split("/")[0])
+      $(this).addClass("nav__item--active");
+    }
+  })
+</script>
