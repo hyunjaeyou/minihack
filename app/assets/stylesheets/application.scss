@@ -106,10 +106,13 @@
            z-index: 100;
          }
 
+         .logo__img {
+            width: 200px;
+         }
          .header .header__top {
            display: flex;
            justify-content: space-between;
-           margin-bottom: 30px;
+           margin-bottom: 20px;
          }
 
          .header__col {

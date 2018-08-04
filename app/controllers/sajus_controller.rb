@@ -1,5 +1,5 @@
 class SajusController < ApplicationController
-  before_action :nav1, except: [:index]
+  before_action :nav1, except: [:index, :seller]
   def index
   end
 
@@ -23,6 +23,9 @@ class SajusController < ApplicationController
   def newreview
     @review = Review.new(params.require(:review).permit(:user_id, :point, :content))
     @review.save
+  end
+
+  def seller
   end
 
   private
