@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'sajus#index'
   get 'sajus/index'
 
   get 'sajus/saju'
@@ -10,6 +11,5 @@ Rails.application.routes.draw do
   get 'sajus/detail'
 
   get 'sajus/payment'
-
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -12,6 +12,7 @@ class SajusController < ApplicationController
   end
 
   def detail
+    @review = Review.all.order(point: :desc)
   end
 
   def payment
