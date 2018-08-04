@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="saju.css" />
+    <script src="saju.css"></script>
+</head>
+<body>
+<div class="swiper-container swiper-init">
+    <div class="swiper-wrapper">
+    <!-- 첫번째 페이지 -->
+    <div class="swiper-slide">
+        <div class="d-flex flex-column">
+        <div class="bg-light">
+            <div class="d-flex justify-content-end mt-3 mr-3">
+                <button type="button" class="btn btn-warning mr-2"><%= link_to '로그인', root_path, class:"text-dark" %></button>
+                <button type="button" class="btn btn-warning"><%= link_to '회원가입', root_path, class:"text-dark" %></button>
+            </div>
+            <div class="d-flex flex-column align-items-center mt-5">
+                <h3 class="text-center text-warning">당신을 위한 맞춤 사주</h3>
+                <form class="form-inline">
+                    <label class="sr-only" for="inlineFormInputName2">Name</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2">
+                    <button type="submit" class="btn btn-outline-warning mb-2">SEARCH !</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+        <!-- 두번째 페이지 -->
+    <div class="swiper-slide">
+        <div class="d-flex flex-column align-items-center mt-5">
+            <h5 class="text-center text-warning">카테고리</h5>
+            <div class="d-flex">
+                <div class="box mr-1">사주</div>
+                <div class="box mr-1">작명</div>
+                <div class="box mr-1">관상</div>
+                <div class="box mr-1">타로</div>
+                <div class="box">손금</div>
+            </div>
+        </div>
+    </div>
+        <!-- 세번째 페이지 -->
+    <div class="swiper-slide">
+        <div></div>
+    </div>
+    </div>
+    <div class="swiper-pagination" style="position:fixed;"></div>
+</div>
+</body>
+</html>
