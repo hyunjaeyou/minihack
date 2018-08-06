@@ -1,24 +1,9 @@
-# README
+# 아수라발발타
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**2018 멋쟁이사자처럼 미니 연합 해커톤** 5팀의 결과물입니다.
 
-Things you may want to cover:
+주최: 고려대학교 NEXT X 멋쟁이사자처럼
 
-* Ruby version
+주관: 고려대학교 SW중심대학사업단 / 고려대학교 개척마을 pi-ville
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+일시: 8월 4일 12:00 ~ 5일 10:00
